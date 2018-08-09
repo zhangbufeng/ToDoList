@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        background-color:  #CDCDCD;
+    }
+    .header{
+        width: auto;
+        height: 50px;
+        background-color: #323232;
+    }
+    .headerBox{
+        width: 600px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .headerBox label{
+        line-height: 50px;
+        font-size: 24px;
+        color: #DDDDDD;
+    }
+    .headerBox input{
+        float: right;
+        width: 60%;
+        height: 26px;
+        border-radius: 5px;
+        margin-top: 12px;
+        text-indent: 10px;
+        outline: none;
+        border: none;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;
+    }
+    .bigBox{
+        width: auto;
+        height: auto;
+        background-color: #CDCDCD;
+    }
+    .con{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    .bigBox .title{
+        width: 600px;
+        height: 71px;
+        margin: 0 auto;
+    }
+    .title h2{
+        padding: 20px 0;
+        float: left;
+    }
+    .title .circle{
+        float: right;
+        font-size: 14px;
+        padding: 0 5px;
+        background-color: #E6E6FA;
+        border-radius: 10px;
+        line-height: 20px;
+        text-align: center;
+        color: #666;
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+    .bigBox .info{
+        width: 600px;
+        height: 32px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #fff;
+        margin: 0 auto;
+        border-left:5px solid #629A9C;
+        margin-bottom: 10px;
+    }
+    .info .check{
+        width: 22px;
+        height: 22px;
+        margin-left: 15px;
+        margin-top: 6px;
+        cursor: pointer;
+        float: left;
+    }
+    .bigBox .del{
+        width: 22px;
+        height: 20px;
+        float: right;
+        background-color: #CCCCCC;
+        border-radius: 20px;
+        color: #fff;
+        margin-top: 6px;
+        margin-right: 10px;
+    
+        cursor: pointer;
+    }
+    .bigBox .del::after{
+        display: block;
+        content: "-";
+        width: 14px;
+        height: 12px;
+        border: 2px solid #fff;
+        border-radius: 40px;
+        margin-left: 2px;
+        margin-top: 2px;
+        text-align: center;
+        line-height: 12px;
+        font-weight: bold;
+    }
+    .bigBox .text{
+        width: 505px;
+        height: 32px;
+        float: left;
+        margin-left: 5px;
+        line-height: 32px;
+    }
+    .bigBox2 .text{
+        width: 505px;
+        height: 32px;
+        float: left;
+        margin-left: 5px;
+        line-height: 32px;
+    }
+    .bigBox .text  input{
+        width: 505px;
+        height: 32px;
+        float: left;
+        margin-left: 5px;
+        line-height: 32px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .bigBox2 .text  input{
+        width: 505px;
+        height: 32px;
+        float: left;
+        margin-left: 5px;
+        line-height: 32px;
+        outline: none;
+        border: none;
+    }
+    .bigBox2 .info{
+        opacity: 0.5;
+    }
+    con2{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="headerBox">
+            <label for="todo">ToDoList            
+                <input type="text" id="todo" placeholder="添加ToDo">
+            </label> 
+        </div>
+    </header>
+    <div class="bigBox">
+        <div class="title">
+            <h2>正在进行</h2>
+            <div class="circle">0</div>    
+        </div> 
+        <div class="con">
+            <div class="info">
+                <input type="checkbox" class="check">
+                <div class="text">
+                    <input type="text"> 
+                </div>
+                <div class="del"></div>
+            </div> 
+            <div class="info">
+                    <input type="checkbox" class="check">
+                    <div class="text">
+                        <input type="text">
+                    </div>
+                    <div class="del"></div>
+            </div> 
+        </div>     
+    </div>
+    <div class="bigBox bigBox2">
+            <div class="title">
+                <h2>已经完成</h2>
+                    <div class="circle">0</div>
+            </div> 
+            <div class="con2">
+                <!-- <div class="info">
+                    <input type="checkbox" class="check">
+                    <div class="text">
+                        <input type="text">
+                    </div>
+                    <div class="del"></div>
+                </div>   -->
+            </div>     
+    </div>
+</body>
+</html>
